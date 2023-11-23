@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\GroupController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,5 +25,11 @@ Route::get('/', function () {
     return view('welcome');
 })->middleware(['verify.shopify'])->name('home');
 
-Route::resource('faq', FaqController::class);
+Route::get('/products', [ProductController::class,'index'])->middleware(['verify.shopify']);
+
+Route::resource('faqs', FaqController::class);
 Route::resource('group', GroupController::class);
+
+// Route::prefix('faq')->name('faq.')->group(function () {
+//     Route::resource('faqs', FaqController::class);
+// });

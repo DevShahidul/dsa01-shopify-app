@@ -1,4 +1,6 @@
-@extends('shopify-app::layouts.default')
+@extends('layouts.app')
+
+@section('title', 'Dashboard')
 
 @section('content')
     <!-- You are: (shop domain name) -->
