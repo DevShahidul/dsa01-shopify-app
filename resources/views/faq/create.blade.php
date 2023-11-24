@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="d-sm-flex btn-row pt-3 pt-spacing-md-8 pb-spacing-md-5">
-            <button type="button" class="btn ms-sm-auto btn-primary px-4 py-spacing-3" data-bs-dismiss="modal" aria-label="Close">
+            <button type="submit" class="btn ms-sm-auto btn-primary px-4 py-spacing-3" data-bs-dismiss="modal" aria-label="Close">
                 Save
             </button>
         </div>
