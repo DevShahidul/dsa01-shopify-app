@@ -28,7 +28,7 @@ Route::get('/', function () {
 Route::get('/products', [ProductController::class,'index'])->middleware(['verify.shopify']);
 
 Route::resource('faqs', FaqController::class);
-Route::resource('group', GroupController::class);
+Route::resource('groups', GroupController::class);
 
 // Route::prefix('faq')->name('faq.')->group(function () {
 //     Route::resource('faqs', FaqController::class);

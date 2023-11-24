@@ -39,8 +39,8 @@
                     Group
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="groupDropdownMenuLink">
-                    <li><a class="dropdown-item" href="{{ route('group.index')}}">All list</a></li>
-                    <li><a class="dropdown-item" href="#">Create</a></li>
+                    <li><a class="dropdown-item" href="{{ route('groups.index')}}">All list</a></li>
+                    <li><a class="dropdown-item" href="{{ route('groups.create') }}">Create</a></li>
                 </ul>
             </li>
         </ul>
